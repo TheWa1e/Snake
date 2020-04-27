@@ -11,12 +11,11 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            //Co    nsole.SetBufferSize(80, 25);
 
             Walls walls = new Walls(80, 25);
             walls.Draw();
 
-            //Отрисовка
+
             Point p = new Point(4, 5, '*');
             Snake snake = new Snake(p, 4, Direction.RIGHT);
             snake.Draw();
